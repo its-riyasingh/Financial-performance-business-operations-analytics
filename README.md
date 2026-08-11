@@ -6,7 +6,7 @@
 
 ## 📊 Live Dashboard
 
-🔗 **Live Demo:** `YOUR_STREAMLIT_APP_URL`
+🔗 **Live Demo:** `https://financial-performance-business-operations-analytics-dashboard.streamlit.app/`
 
 ---
 ## 📸 Dashboard Preview
