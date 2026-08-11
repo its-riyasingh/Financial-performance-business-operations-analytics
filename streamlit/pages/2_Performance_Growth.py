@@ -160,10 +160,18 @@ conn = st.connection(
     type="sql"
 )
 
-df = conn.query(
-    "SELECT * FROM financial_metrics",
-    ttl=0
-)
+for attempt in range(3):
+    try:
+        df = conn.query(
+            "SELECT * FROM financial_metrics",
+            ttl=300
+        )
+        break
+    except Exception:
+        if attempt == 2:
+            st.error("Database connection failed. Please try again.")
+            st.stop()
+        time.sleep(2)
 
 df["fiscal_date"] = pd.to_datetime(
     df["fiscal_date"]
