@@ -15,7 +15,8 @@
 
 The Home page introduces the financial analytics platform and provides an overview of the analytical sections available in the dashboard.
 
-![Home Dashboard](YOUR_HOME_SCREENSHOT_URL)
+![Home Dashboard](![Uploading image.png…]()
+)
 
 ### 📈 Executive Overview
 
